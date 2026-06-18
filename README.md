@@ -1,5 +1,7 @@
 # 棱镜终端: 下一代配置器
 
+[首页](https://support.kagamistudio.com/)
+
 ## 使用方法
 
 ### 使用 Nix Flake
