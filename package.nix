@@ -45,6 +45,14 @@ stdenv.mkDerivation {
     wrapGAppsHook3
   ];
 
+  # If a new version of PrismTerminal failed to build/launch then:
+  # For each missing dependency that `autoPacthelfHook` reports, or dynamic library that fails to load at runtime,
+  # say, `foo.so`, you can run `steam-run realpath /lib/foo.so` to get the corresponding package name.
+  # If the library is not bundled in `steam-run`, then search the name of the library in `search.nixos.org`.
+  # You may need to remove the postfix number if you can't find one.
+  # For missing dependencies for `autoPatchelfHook`, put them in `buildInputs`;
+  # For dynamic libraries that fails to load at runtime, put them in `runtimeDependencies`.
+
   buildInputs = [
     openssl
     systemdLibs
