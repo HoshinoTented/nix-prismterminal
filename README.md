@@ -4,7 +4,7 @@
 
 ## 使用方法
 
-### 使用 Nix Flake
+### 使用 Nix Flake + NixOS
 
 `flake.nix`:
 ```nix
@@ -48,3 +48,11 @@
 ```
 
 > 启用后需要重新接入猫盘才能更新硬件访问权限.
+
+### 在命令行使用
+
+```bash
+nix shell github:HoshinoTented/nix-prismterminal
+```
+
+> 命令行使用不会自动添加硬件访问权限.
