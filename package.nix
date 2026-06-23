@@ -23,9 +23,10 @@
 
 let
   appName = "prismterminal-tauri";
-  version = "1.1.15";
-  release = "https://github.com/Kagami-Studio/PrismTerminal-Release/releases/download/v${version}/PrismTerminal-v${version}-linux64.deb";
-  hash = "sha256-q6j9UxDodpADK42rzlDeKthtesg7GuI24yAjcU/xuuI=";
+  version = "1.1.19";
+  release-hash = "2743f518ed644d4db0eac222b3f28138";
+  release = "https://support.kagamistudio.com/uploads/downloads/PrismTerminal/PrismTerminal-v${version}-linux64-${release-hash}.deb";
+  hash = "sha256-I4txVUWHHaLZT/VzwTkpToKR4/49+K0wBmJfSuRp+go=";
 in
 
 stdenv.mkDerivation {
