@@ -1,6 +1,6 @@
 # 棱镜终端: 下一代配置器
 
-[首页](https://support.kagamistudio.com/)
+[首页](https://support.kagamistudio.com/) | [PrismTerminal Release](https://github.com/Kagami-Studio/PrismTerminal-Release)
 
 ## 使用方法
 
