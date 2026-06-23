@@ -14,7 +14,15 @@
     {
       packages.${system}.default = prism;
 
+      overlays.${system} = rec {
+        prismterminal = final: prev: {
+          prismterminal = prism;
+        };
+        default = prismterminal;
+      };
+
       nixosModules = rec {
+        # Maybe the user should use the overlay
         prismterminal = import ./nixos prism;
         default = prismterminal;
       };
