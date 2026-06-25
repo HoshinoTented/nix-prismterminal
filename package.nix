@@ -23,10 +23,8 @@
 
 let
   appName = "prismterminal-tauri";
-  version = "1.1.19";
-  release-hash = "2743f518ed644d4db0eac222b3f28138";
-  release = "https://support.kagamistudio.com/uploads/downloads/PrismTerminal/PrismTerminal-v${version}-linux64-${release-hash}.deb";
-  hash = "sha256-I4txVUWHHaLZT/VzwTkpToKR4/49+K0wBmJfSuRp+go=";
+  appInfo = import ./app-info.nix;
+  inherit (appInfo) version release hash;
 in
 
 stdenv.mkDerivation {
